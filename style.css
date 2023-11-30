@@ -1,0 +1,112 @@
+/* Julia Caro */
+/* May 3, 2023 */
+
+/* css reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* body */
+body {
+	width: 100%;
+	background-color: lightgrey;
+}
+
+/* the title div */
+.header {
+	background-color: #0B3D91;
+	text-align: center;
+	font-size: 25px;
+	width: 685px;
+	height: 75px;
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px 20px 0 0;
+	box-shadow: 3px 3px 3px #8c8c8b;
+}
+
+/* the page's main title */
+h1 {
+	font-size: 23px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: auto;
+	color: #ffffff;
+	line-height: 75px;
+	height: 75px;
+	font-family: 'Bruno Ace', cursive;
+}
+
+/* the title's link to the NASA website */
+h1 a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* the title's link to the NASA website upon being hovered over by the cursor */
+h1 a:hover {
+	color: #ed1c24;
+  cursor: pointer;
+}
+
+/* the APOD's individual title */
+h2 {
+	font-family: 'Bruno Ace', cursive;
+	color: #0B3D91;
+	font-size: 21px;
+	padding-top: 15px;
+}
+
+/* the APOD's individual date (should be today's date) */
+#apodDate {
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 17px;
+	padding-bottom: 10px;
+}
+
+/* the main container */
+.container {
+	width: 685px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	text-align: center;
+	background: #ffffff;
+	border-radius: 0 0 20px 20px;
+	box-shadow: 3px 3px 3px #8c8c8b;
+	margin-bottom: 60px;
+}
+
+/* the image (if there is one) */
+.image-div img {
+	object-fit: cover;
+	width: auto;
+	height: 300px;
+	padding-bottom: 10px;
+}
+
+/* the video (if there is one) */
+.video-div iframe {
+	object-fit: cover;
+	width: auto;
+	height: 300px;
+	padding-bottom: 10px;
+}
+
+/* the APOD description text */
+#apod-description {
+	font-family: 'Space Grotesk', sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	text-align: justify;
+	font-size: 17px;
+}
+
+/* the hidden attribute; this will hide either hidden media div when the relevant element isn't present within the code */
+.hidden {
+	display: none;
+}

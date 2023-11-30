@@ -1,0 +1,53 @@
+<!-- Julia Caro -->
+<!-- May 3, 2023 -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>NASA'S APOD</title>
+	<!-- A favicon -->
+	<link rel="icon" type="image/x-icon" href="images/rocket-icon.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+	<!-- Links to custom fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+</head>
+	
+<body>
+		<!-- The APOD's information div -->
+		<div class="header">
+			<!-- The main title of the page; the link on the 'NASA' text should open to the NASA official website in a new tab -->
+			<h1><a href="https://www.nasa.gov/" target="_blank">NASA</a>'s Astronomy Picture of the Day</h1>
+	  </div>
+		<!-- the container div for the media divs -->
+		<div class="container">
+			<!-- The APOD image div (if there is one); the hidden attribute allows the div to be hidden if there is no image div/no image in the day's APOD -->
+			<div class="image-div hidden">
+				<!-- The APOD's title -->
+				<h2 id="apodTitle"></h2>
+				<!-- The APOD's date -->
+				<p id="apodDate"></p>
+		    <!-- The APOD's image -->
+				<img id="apodImg" src="" alt="NASA astronomy image">
+				<!-- The APOD's description -->
+				<p id="apod-description"></p>
+			</div>
+			<!-- The APOD video div (if there is one); the hidden attribute allows the div to be hidden if there is no video div/no video in the day's APOD -->
+			<div class="video-div hidden">
+				<!-- The APOD's title -->
+				<h2 id="apodTitle"></h2>
+				<!-- The APOD's date -->
+				<p id="apodDate"></p>
+			  <!-- The APOD's video -->
+				<iframe src="" frameborder="0"></iframe>
+				<!-- The APOD's description -->
+				<p id="apod-description"></p>
+			</div>
+		</div>
+	
+  	<script src="script.js"></script>
+</body>
+</html>
